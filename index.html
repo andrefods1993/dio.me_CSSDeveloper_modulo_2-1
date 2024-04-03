@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEXBOX: Guia Completo para Iniciantes em CSS - YouTube</title>
+
+  <link rel="shortcut icon" href="/assets/image/favicon.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body>
+  <header class="container">
+    <div class="container-header" id="start">
+      <div>
+        <button class="button-header" name="menu" aria-label="Menu" title="Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+            <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="logo-header">
+        <img src="/assets/image/logo_youtube.svg" alt="Logo YouTube" id="logo">
+      </div>
+    </div>
+    <div class="container-header" id="center">
+      <form action="Barra de pesquisa" id="search-bar">
+        <div>
+          <input type="text" name="search" id="search" placeholder="Pesquisar">
+        </div>
+      </form>
+      <div>
+        <button class="button-header" name="pesquisar" aria-label="Pesquisar" title="Pesquisar" id="btn-search">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"
+            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M18 11C18 14.866 14.866 18 11 18C7.13401 18 4 14.866 4 11C4 7.13401 7.13401 4 11 4C14.866 4 18 7.13401 18 11ZM16.2961 16.9961C14.8853 18.2431 13.031 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11C19 13.0274 18.2458 14.8786 17.0028 16.2885L20.5583 19.8441L20.9119 20.1976L20.2048 20.9047L19.8512 20.5512L16.2961 16.9961Z">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <div id="microphone">
+        <button class="button-header" name="microphone" aria-label="Pesquisar com sua voz" title="Pesquisar com sua voz">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+            <path
+              d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z">
+            </path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="container-header" id="end">
+      <div>
+        <button class="button-header" name="video-add" aria-label="Criar" title="Criar">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24"
+            style="pointer-events: none; display: inherit; width: 100%; height: 100%;" viewBox="0 0 24 24" width="24"
+            focusable="false">
+            <path
+              d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <div>
+        <button class="button-header" name="bell" aria-label="Notificações" title="Notificações">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
+            width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+            <path
+              d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <div class="avatar-header">
+        <img src="/assets/image/avatar.png" alt="Avatar" id="avatar">
+      </div>
+    </div>
+  </header>
+
+  <main class="container-main">
+    <section>
+      <div class="video">
+        <iframe id="video-element" src="https://www.youtube.com/embed/Z4CbaGCEsTY?si=9omLNKQvo7_Zc7cs"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-title">
+        <h1>FLEXBOX: Guia Completo para Iniciantes em CSS</h1>
+      </div>
+      <div class="video-actions">
+        <div class="profile">
+          <div>
+            <img src="/assets/image/profile.jpg" alt="Perfil" id="profile-img">
+          </div>
+          <div id="profile-description">
+            <h2>Larissa Kich</h2>
+            <p>17,8 mil inscritos</p>
+          </div>
+        </div>
+        <div>
+          <button id="subscribe">
+            Inscrever-se
+          </button>
+        </div>
+        <div id="actions-like">
+          <button id="like">
+            <img src="/assets/image/like.svg" alt="Like" class="icon">
+          </button>
+          <button id="dislike">
+            <img src="/assets/image/dislike.svg" alt="Dislike" class="icon">
+          </button>
+        </div>
+        <div>
+          <button id="share">
+            <img src="/assets/image/share.svg" alt="Compartilhar" class="icon">
+            Compartilhar
+          </button>
+        </div>
+        <div>
+          <button id="more">
+            <img src="/assets/image/more.svg" alt="Opções" class="icon">
+          </button>
+        </div>
+      </div>
+      <div class="video-description">
+        <div id="description-title">
+          <h3>1.582 visualizações  8 de mar. de 2024</h3>
+        </div>
+        <div id="description-content">
+          <p>Olá, pessoal!</p>
+          <p>
+            O Flexbox é uma poderosa ferramenta que permite criar designs flexíveis e adaptáveis para suas páginas da web com
+            facilidade. Neste vídeo, vamos explorar todos os aspectos do Flexbox, desde os conceitos básicos até técnicas
+            avançadas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <aside>
+      <div class="trumb">
+        <div>
+          <img src="/assets/image/Thumb-1.png" alt="Sugestão 01" class="video-trumb">
+        </div>
+        <div class="info-trumb">
+          <h3>Geração Tech Unimed - BH - Ciência de Dados</h3>
+          <p>DigitalInnovationOne</p>
+          <p>
+            2,1 mil visualizações
+            Transmitido há 2 dias
+          </p>
+        </div>
+      </div>
+
+      <div class="trumb">
+        <div>
+          <img src="/assets/image/Thumb-2.png" alt="Sugestão 01" class="video-trumb">
+        </div>
+        <div class="info-trumb">
+          <h3>Scrum Talks</h3>
+          <p>DigitalInnovationOne</p>
+          <p>
+            1,6 mil visualizações
+            Transmitido há 3 dias
+          </p>
+        </div>
+      </div>
+
+      <div class="trumb">
+        <div>
+          <img src="/assets/image/Thumb-3.png" alt="Sugestão 01" class="video-trumb">
+        </div>
+        <div class="info-trumb">
+          <h3>Machine Learning Avançado - Fast Track</h3>
+          <p>DigitalInnovationOne</p>
+          <p>
+            1,7 mil visualizações
+            Transmitido há 4 dias
+          </p>
+        </div>
+      </div>
+
+      <div class="trumb">
+        <div>
+          <img src="/assets/image/Thumb-4.png" alt="Sugestão 01" class="video-trumb">
+        </div>
+        <div class="info-trumb">
+          <h3>Global Skills #2 - Project Planning</h3>
+          <p>DigitalInnovationOne</p>
+          <p>
+            971 visualizações
+            Transmitido há 5 dias
+          </p>
+        </div>
+      </div>
+
+      <div class="trumb">
+        <div>
+          <img src="/assets/image/Thumb-5.png" alt="Sugestão 01" class="video-trumb">
+        </div>
+        <div class="info-trumb">
+          <h3>Como aprender a programar Python do ZERO</h3>
+          <p>DigitalInnovationOne</p>
+          <p>
+            711 visualizações
+            Transmitido há 6 dias
+          </p>
+        </div>
+      </div>
+
+      <div class="trumb">
+        <div>
+          <img src="/assets/image/Thumb-1.png" alt="Sugestão 01" class="video-trumb">
+        </div>
+        <div class="info-trumb">
+          <h3>Geração Tech Unimed - BH - Ciência de Dados</h3>
+          <p>DigitalInnovationOne</p>
+          <p>
+            2,1 mil visualizações
+            Transmitido há 2 dias
+          </p>
+        </div>
+      </div>
+
+      <div class="trumb">
+        <div>
+          <img src="/assets/image/Thumb-2.png" alt="Sugestão 01" class="video-trumb">
+        </div>
+        <div class="info-trumb">
+          <h3>Scrum Talks</h3>
+          <p>DigitalInnovationOne</p>
+          <p>
+            1,6 mil visualizações
+            Transmitido há 3 dias
+          </p>
+        </div>
+      </div>
+
+      <div class="trumb">
+        <div>
+          <img src="/assets/image/Thumb-3.png" alt="Sugestão 01" class="video-trumb">
+        </div>
+        <div class="info-trumb">
+          <h3>Machine Learning Avançado - Fast Track</h3>
+          <p>DigitalInnovationOne</p>
+          <p>
+            1,7 mil visualizações
+            Transmitido há 4 dias
+          </p>
+        </div>
+      </div>
+
+      <div class="trumb">
+        <div>
+          <img src="/assets/image/Thumb-4.png" alt="Sugestão 01" class="video-trumb">
+        </div>
+        <div class="info-trumb">
+          <h3>Global Skills #2 - Project Planning</h3>
+          <p>DigitalInnovationOne</p>
+          <p>
+            971 visualizações
+            Transmitido há 5 dias
+          </p>
+        </div>
+      </div>
+
+      <div class="trumb">
+        <div>
+          <img src="/assets/image/Thumb-5.png" alt="Sugestão 01" class="video-trumb">
+        </div>
+        <div class="info-trumb">
+          <h3>Como aprender a programar Python do ZERO</h3>
+          <p>DigitalInnovationOne</p>
+          <p>
+            711 visualizações
+            Transmitido há 6 dias
+          </p>
+        </div>
+      </div>
+
+    </aside>
+
+  </main>
+</body>
+
+</html>
